@@ -1,0 +1,32 @@
+{
+  "name":        "easteregg"
+, "version":     "1.0.0"
+, "title":       "jQuery Easter Egg"
+, "description": "jQuery plugin to add easter eggs to your pages."
+
+, "keywords": [
+    "easteregg"
+  , "easter"
+  , "egg"
+  ]
+
+, "author": {
+    "name": "Daniel Perez Alvarez"
+  , "url":  "http://unindented.org/"
+  }
+
+, "licenses": [
+    {
+      "type": "Apache-2.0"
+    , "url":  "https://github.com/unindented/jquery-easteregg/blob/master/LICENSE"
+    }
+  ]
+
+, "homepage": "https://github.com/unindented/jquery-easteregg/"
+, "bugs":     "https://github.com/unindented/jquery-easteregg/issues"
+, "demo":     "http://unindented.github.com/jquery-easteregg/"
+
+, "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
