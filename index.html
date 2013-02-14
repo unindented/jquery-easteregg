@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jQuery Easter Egg by unindented</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jQuery Easter Egg</h1>
+        <p>Do you remember those cheats and easter eggs that you used to trigger on your NES and GameBoy games by pressing a certain sequence of buttons? Now you can add them to your pages with this tiny jQuery plugin!</p>
+        <p class="view"><a href="https://github.com/unindented/jquery-easteregg">View the Project on GitHub <small>unindented/jquery-easteregg</small></a></p>
+        <ul>
+          <li><a href="https://github.com/unindented/jquery-easteregg/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/unindented/jquery-easteregg/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/unindented/jquery-easteregg">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+
+      <section>
+        <h2>Demo</h2>
+        <p>Try pressing the following sequence of keys:</p>
+        <p><kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd></p>
+
+        <h2>Usage</h2>
+        <p>If you already have jQuery on your site, then it's just a matter of downloading this plugin and loading it into your page. Then just call the <code>easteregg</code> method on any element you want, providing a callback (<code>callback</code> property) and the sequence of keys that will trigger it (<code>sequence</code> property):</p>
+        <div class="highlight">
+        <pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>jQuery Easter Egg<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.easteregg.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">easteregg</span><span class="p">({</span>
+          <span class="nx">sequence</span> <span class="o">:</span> <span class="p">[</span><span class="mi">38</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">65</span><span class="p">]</span>
+        <span class="p">,</span> <span class="nx">callback</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="s1">'Pizza time!'</span><span class="p">);</span>
+          <span class="p">}</span>
+        <span class="p">});</span>
+      <span class="p">});</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></pre>
+        </div>
+        <p>If no <code>sequence</code> is provided, the <a href="http://en.wikipedia.org/wiki/Konami_Code">Konami Code</a> sequence will be used (<kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>).</p>
+
+        <h2>Meta</h2>
+        <ul>
+        <li>Code: <code>git clone git://github.com/unindented/jquery-easteregg.git</code></li>
+        <li>Home: <a href="http://unindented.github.com/jquery-easteregg/">http://unindented.github.com/jquery-easteregg/</a></li>
+        </ul>
+
+        <h2>Contributors</h2>
+        <ul>
+        <li>Daniel Perez Alvarez (<a href="mailto:unindented@gmail.com">unindented@gmail.com</a>)</li>
+        </ul>
+
+        <h2>License</h2>
+        <p>Copyright (c) 2012 Daniel Perez Alvarez (<a href="http://unindented.org/">unindented.org</a>). This is free software, and may be redistributed under the terms specified in the LICENSE file.</p>
+      </section>
+
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/unindented">unindented</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+
+    <script src="javascripts/scale.fix.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/jquery.easteregg.min.js"></script>
+    <script>
+      $(function () {
+        var $body = $('body');
+        $(document).easteregg({
+          sequence : [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+        , callback : function () {
+            $body.toggleClass('easteregg');
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
