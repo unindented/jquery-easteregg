@@ -1,6 +1,6 @@
 {
   "name":        "easteregg"
-, "version":     "1.0.0"
+, "version":     "1.0.1"
 , "title":       "jQuery Easter Egg"
 , "description": "jQuery plugin to add easter eggs to your pages."
 
