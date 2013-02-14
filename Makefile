@@ -74,7 +74,7 @@ $(if $(UGLIFY),,$(error \
 $(\n)You must have *uglifyjs* in your path to build the files in this project. \
 $(\n)Please run *make dependencies*))
 
-@@$(UGLIFY) --output $(BUILD_FILE) $(SRC_FILE)
+@@$(UGLIFY) --mangle --compress --comments='/^!/' --output $(BUILD_FILE) $(SRC_FILE)
 endef
 
 # Watching with Watch (https://github.com/visionmedia/watch/)
