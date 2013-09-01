@@ -1,4 +1,4 @@
-# jQuery Easter Egg [![Build Status](https://secure.travis-ci.org/unindented/jquery-easteregg.png)](http://travis-ci.org/unindented/jquery-easteregg)
+# jQuery Easter Egg [![Build Status](https://secure.travis-ci.org/unindented/jquery-easteregg.png)](http://travis-ci.org/unindented/jquery-easteregg) [![Dependency Status](https://gemnasium.com/unindented/jquery-easteregg.png)](https://gemnasium.com/unindented/jquery-easteregg)
 
 Do you remember those cheats and easter eggs that you used to trigger on your NES and GameBoy games by pressing a certain sequence of buttons? Now you can add them to your pages with this tiny jQuery plugin!
 
