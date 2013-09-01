@@ -27,7 +27,7 @@
   }
 , "devDependencies" : {
     "docco"     : "0.x"
-  , "jshint"    : "0.x"
+  , "jshint"    : "2.x"
   , "uglify-js" : "2.x"
   }
 }
